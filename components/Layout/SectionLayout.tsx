@@ -1,11 +1,23 @@
+import classNames from "classnames";
+
 interface Props {
   children: React.ReactNode;
+  className?: string;
+  dark?: boolean;
 }
 
-export default function SectionLayout({ children }: Props) {
+export default function SectionLayout({ children, className, dark }: Props) {
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center">
-      <div className="max-w-7xl flex justify-center items-center"> {children}</div>
+    <div
+      className={classNames("min-h-screen w-screen flex justify-center items-center", {
+        "bg-tuscan": dark,
+      })}
+    >
+      <div
+        className={classNames("max-w-7xl flex justify-center items-center", className)}
+      >
+        {children}
+      </div>
     </div>
   );
 }

@@ -23,6 +23,9 @@ module.exports = {
           '"Helvetica Neue"',
         ],
       },
+      fontSize: {
+        "6xl": ["4rem", { lineHeight: "72px" }],
+      },
       letterSpacing: {
         widest: "0.5rem",
       },
