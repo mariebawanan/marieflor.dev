@@ -1,7 +1,13 @@
-export default function Home() {
+import { About, Contact, Footer, Hero, Work } from "@/components";
+
+export default function Index() {
   return (
-    <main className="font-sans bg-blue-alice min-h-screen w-full">
-      <h1 className="text-red-900 text-9xl">hello there!</h1>
+    <main className="font-sans bg-blue min-h-screen w-full text-lg text overflow-x-hidden">
+      <Hero />
+      <About />
+      <Work />
+      <Contact />
+      <Footer />
     </main>
   );
 }

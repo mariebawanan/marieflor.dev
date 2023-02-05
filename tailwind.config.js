@@ -3,6 +3,9 @@ module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      textColor: {
+        DEFAULT: "#794856",
+      },
       colors: {
         tuscan: "#794856",
         pink: "#D5A7B4",
@@ -19,6 +22,12 @@ module.exports = {
           "Roboto",
           '"Helvetica Neue"',
         ],
+      },
+      letterSpacing: {
+        widest: "0.5rem",
+      },
+      maxWidth: {
+        "1/2": "50%",
       },
     },
   },
