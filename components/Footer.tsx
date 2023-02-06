@@ -7,7 +7,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="py-11 flex w-full justify-between px-44 text-sm items-end">
+    <div className="py-11 flex w-full justify-between px-44 text-sm items-end mt-44">
       <div className="flex items-center space-x-4">
         <span>2023 &#x2022; marieflor.dev</span>
         <Badge
