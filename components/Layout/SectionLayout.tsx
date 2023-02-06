@@ -14,7 +14,10 @@ export default function SectionLayout({ children, className, dark }: Props) {
       })}
     >
       <div
-        className={classNames("max-w-7xl flex justify-center items-center", className)}
+        className={classNames(
+          "max-w-[90%] md:max-w-7xl flex justify-center items-center",
+          className
+        )}
       >
         {children}
       </div>

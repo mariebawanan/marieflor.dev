@@ -17,7 +17,7 @@ export default function Clipboard({ text, children }: Props) {
 
   return (
     <div
-      className="hover:cursor-pointer group flex flex-col space-y-4 items-center"
+      className="md:hover:cursor-pointer group flex flex-col space-y-4 items-center"
       onClick={handleCopy}
     >
       {children}
