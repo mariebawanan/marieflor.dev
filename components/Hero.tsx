@@ -9,7 +9,7 @@ export default function Home() {
         <Heading dark className="text-center">
           marieflor bawanan
         </Heading>
-        <p className="text-center w-4/5 md:w-2/3">
+        <p className="text-center w-4/5 md:w-full">
           Loves to work on the web. Passionate about building simple and elegant solutions
           to complex problems.
         </p>

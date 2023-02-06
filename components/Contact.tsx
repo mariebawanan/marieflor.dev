@@ -8,7 +8,7 @@ export default function Contact() {
       <Heading dark className="font-bold text-center">
         Let’s keep in touch!
       </Heading>
-      <p className="w-full md:w-1/2">
+      <p className="w-full md:w-1/2 text-center">
         If you have an exciting opportunity for me, or if you just simply want to say
         hello, feel free to reach out!
       </p>
