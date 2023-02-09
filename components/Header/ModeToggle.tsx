@@ -18,7 +18,7 @@ export default function ModeToggle({ setTheme, theme }: Props) {
           "bg-black ": isDark,
         }
       )}
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(isDark ? "light" : "dark")}
     >
       <FaCloud
         className={classNames("absolute top-0.5 opacity-30", {
@@ -35,7 +35,7 @@ export default function ModeToggle({ setTheme, theme }: Props) {
           }
         )}
       >
-        {theme === "dark" ? (
+        {isDark ? (
           <FaMoon width={12} height={12} />
         ) : (
           <FaSun width={12} height={12} />
