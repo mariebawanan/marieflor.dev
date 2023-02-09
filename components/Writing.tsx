@@ -1,6 +1,7 @@
 import { writing } from "./Float/config";
 import Float from "./Float/Float";
 import { SectionLayout } from "./Layout";
+import { SplitText } from "./SplitText";
 import { Heading, SubHeading } from "./Typography";
 import { Align } from "./Typography/types";
 
@@ -14,7 +15,7 @@ export default function Writing() {
 
         <div>
           <Heading size="sm" dark className="font-extrabold">
-            It&apos;s in the works!
+            <SplitText text="It's in the works!" />
           </Heading>
 
           <p>Check back soon.</p>

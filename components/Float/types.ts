@@ -10,10 +10,6 @@ export interface ShapeConfig {
   opacity?: number;
 }
 
-export enum Page {
-  Home = "home",
-}
-
 export enum Colors {
   Red = "#DE5055",
   Pink = "#B84A7E",

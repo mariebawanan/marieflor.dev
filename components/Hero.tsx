@@ -6,7 +6,7 @@ import { Heading, SubHeading } from "./Typography";
 
 export default function Home() {
   return (
-    <SectionLayout className="overflow-hidden">
+    <SectionLayout className="overflow-hidden ">
       <div className="w-full md:max-w-2/3 flex flex-col items-center space-y-11">
         <SubHeading dark>
           <span className="font-bold">Hello! </span>My name is
