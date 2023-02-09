@@ -1,6 +1,5 @@
-export { default as About } from "./About";
-export { default as Contact } from "./Contact";
-export { default as Footer } from "./Footer";
+export * from "./Badge";
+export * from "./Clipboard";
 export { default as Hero } from "./Hero";
 export * from "./Layout";
 export * from "./LogRocket";
