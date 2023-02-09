@@ -7,6 +7,7 @@ export interface ShapeConfig {
   width: number;
   lag: number;
   rotate?: number;
+  opacity?: number;
 }
 
 export enum Page {

@@ -17,7 +17,7 @@ export default function SubHeading({
   return (
     <h2
       className={classNames(
-        "text-base md:text-xl tracking-widest font-extralight uppercase",
+        "w-full text-base md:text-xl tracking-widest font-extralight uppercase",
         {
           "text-tuscan": dark,
           "text-pink": !dark,

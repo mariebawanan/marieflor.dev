@@ -95,4 +95,94 @@ const home: ShapeConfig[] = [
   },
 ];
 
-export { home };
+const about: ShapeConfig[] = [
+  {
+    icon: <HalfFilledV1 color={Colors.Purple} />,
+    bottom: 12,
+    left: 36,
+    width: 13,
+    lag: 1,
+    rotate: 58,
+  },
+  {
+    icon: <HalfOutline color={Colors.Purple} />,
+    bottom: 9,
+    left: 33,
+    width: 14,
+    lag: 3,
+    rotate: 20,
+    opacity: 0.6,
+  },
+  {
+    icon: <HalfFilledV2 color={Colors.Red} />,
+    top: 21,
+    left: -2,
+    width: 13,
+    lag: 1,
+    rotate: -40,
+  },
+  {
+    icon: <ArcOutline color={Colors.Beige} />,
+    top: 20,
+    left: -3,
+    width: 13,
+    lag: 3,
+    rotate: -40,
+  },
+  {
+    icon: <QuarterFilled color={Colors.Pink} />,
+    top: 12,
+    left: 40,
+    width: 8,
+    lag: 4,
+  },
+  {
+    icon: <FullOutline color={Colors.Red} />,
+    bottom: 35,
+    left: 53,
+    width: 15,
+    lag: 4,
+  },
+  {
+    icon: <FullFilled color={Colors.Orange} />,
+    top: 20,
+    right: 2,
+    width: 8,
+    lag: 1,
+  },
+  {
+    icon: <HalfOutline color={Colors.Orange} />,
+    top: 18,
+    right: 4,
+    width: 9,
+    lag: 4,
+    rotate: -180,
+    opacity: 0.8,
+  },
+  {
+    icon: <HalfFilledV2 color={Colors.Teal} />,
+    bottom: 8,
+    left: 8,
+    width: 8,
+    lag: 1,
+    rotate: -20,
+  },
+  {
+    icon: <FullOutline color={Colors.Teal} />,
+    bottom: 8,
+    left: 8,
+    width: 6,
+    lag: 4,
+  },
+  {
+    icon: <HalfOutline color={Colors.Pink} />,
+    bottom: 40,
+    left: 28,
+    width: 14,
+    lag: 4,
+    rotate: -32,
+    opacity: 0.4,
+  },
+];
+
+export { home, about };

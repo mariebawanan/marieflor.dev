@@ -9,12 +9,18 @@ interface Props {
   onClick?: () => void;
 }
 
-export default function Badge({ children, className, icon, size, onClick }: Props) {
+export default function Badge({
+  children,
+  className,
+  icon,
+  size,
+  onClick,
+}: Props) {
   return (
     <div
       onClick={onClick}
       className={classNames(
-        "rounded-3xl inline-flex bg-tuscan text-blue py-1 px-3 text-sm items-center justify-center tracking-wider mr-1",
+        "rounded-3xl inline-flex bg-tuscan text-blue py-1 px-3 text-sm items-center justify-center tracking-wider",
         {
           "space-x-2": icon,
           "text-xs": size === "sm",

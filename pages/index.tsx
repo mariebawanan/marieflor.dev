@@ -1,14 +1,9 @@
-import { Hero } from "@/components";
+import { Hero, PageLayout } from "@/components";
 
 export default function Index() {
   return (
-    <main
-      className="font-sans min-h-screen w-full text-base md:text-lg text overflow-hidden bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: " url('/icons/bg.svg')",
-      }}
-    >
+    <PageLayout>
       <Hero />
-    </main>
+    </PageLayout>
   );
 }
