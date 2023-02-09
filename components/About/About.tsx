@@ -7,7 +7,7 @@ import TechList from "./TechList";
 
 export default function About() {
   return (
-    <SectionLayout className="overflow-hidden">
+    <SectionLayout className="overflow-hidden items-start w-full">
       <div className="w-full md:max-w-2/3 flex flex-col items-center space-y-11">
         <SubHeading dark align={Align.Left}>
           About
@@ -18,11 +18,12 @@ export default function About() {
           experience and pixel-perfect user interfaces
         </Heading>
 
-        <div className="flex space-x-12 leading-relaxed">
-          <p className="w-1/2 whitespace-pre-line">
+        <div className="flex flex-col md:space-x-12 leading-relaxed md:flex-row space-y-12 md:space-y-0">
+          <p className="w-full md:w-1/2 whitespace-pre-line">
             {`I am a frontend-focused software engineer with  6+ years of professional development experience, holding a degree of BS Computer Science from the University of the Philippines.
             \nI have been employed by leading tech companies and emerging amazing startup companies throughout my career thus far.`}
           </p>
+
           <div className="w-full md:w-1/2">
             Currently, I am a Senior Software Engineer,{" "}
             <span className="font-bold">focusing on the frontend</span>. On a
@@ -30,9 +31,6 @@ export default function About() {
             among others, in building and maintaining web applications and
             design systems —
             <span className="font-bold">all built from the ground up</span>.
-            <p className="whitespace-pre-line">
-              {`\nIf you have an exciting opportunity for me, or if you simply want to say hello, feel free to reach out at marie.bawanan@gmail.com.`}
-            </p>
             <p className="whitespace-pre-line text-sm font-bold">
               {`\n\nThis site is still in the works, check back often. `}
               &#9786;
