@@ -1,11 +1,15 @@
 import gsap from "gsap";
 import { CSSProperties, useEffect, useRef } from "react";
-import { home } from "./config";
+import { ShapeConfig } from "./config";
 import useShapes from "./useShapes";
 
-export default function Float() {
+interface Props {
+  config: ShapeConfig[];
+}
+
+export default function Float({ config }: Props) {
   const ref = useRef<HTMLDivElement>(null);
-  const items = useShapes({ config: home });
+  const items = useShapes({ config });
 
   const handleMouseMove = (e: MouseEvent) => {
     const container = ref.current;

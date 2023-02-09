@@ -1,3 +1,4 @@
+import { home } from "./Float/config";
 import Float from "./Float/Float";
 import { SectionLayout } from "./Layout";
 import SplitText from "./SplitText/SplitText";
@@ -23,7 +24,7 @@ export default function Home() {
                 and elegant solutions to complex problems.`}
           </p>
         </div>
-        <Float />
+        <Float config={home} />
       </SectionLayout>
     </>
   );
