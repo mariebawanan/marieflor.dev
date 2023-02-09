@@ -256,7 +256,7 @@ const contact: ShapeConfig[] = [
   },
 ];
 
-const writing: ShapeConfig[] = [
+const projects: ShapeConfig[] = [
   {
     icon: <FullFilled color={Colors.Pink} />,
     top: 50,
@@ -326,4 +326,4 @@ const writing: ShapeConfig[] = [
   },
 ];
 
-export { home, about, contact, writing };
+export { home, about, contact, projects };

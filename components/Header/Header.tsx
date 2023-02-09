@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { RiChat1Line, RiPencilLine, RiUserHeartLine } from "react-icons/ri";
+import { RiChat1Line, RiCodeLine, RiUserHeartLine } from "react-icons/ri";
 import NavItem from "./NavItem";
 import SiteTitle from "./SiteTitle";
 
@@ -11,8 +11,8 @@ export default function Header() {
     <div className="flex w-full mt-10 md:mt-20 items-center justify-between">
       <SiteTitle isHome={currentPath === "/"} />
 
-      <nav className="absolute bottom-4 w-[90%] left-1/2 -translate-x-1/2 md:relative bg-pink rounded-3xl px-8 py-2">
-        <ul className="flex space-x-6 md:space-x-14 justify-around">
+      <nav className="absolute bottom-4 w-[90%] md:w-auto left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0 md:relative bg-pink md:bg-transparent rounded-3xl px-8 py-2">
+        <ul className="flex space-x-6 md:space-x-14 justify-around md:justify-end">
           <NavItem
             url="/about"
             isActive={currentPath === "/about"}
@@ -22,12 +22,12 @@ export default function Header() {
             about
           </NavItem>
           <NavItem
-            url="/writing"
-            isActive={currentPath === "/writing"}
-            icon={<RiPencilLine />}
-            extra="thoughts"
+            url="/projects"
+            isActive={currentPath === "/projects"}
+            icon={<RiCodeLine />}
+            extra="my work"
           >
-            writing
+            projects
           </NavItem>
           <NavItem
             url="/contact"

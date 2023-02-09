@@ -11,13 +11,12 @@ export default function SiteTitle({ isHome }: { isHome: boolean }) {
           !isHome,
       })}
     >
-      <div className="group-hover:hidden w-[120px]">
-        <span className="">marieflor.dev</span>
-      </div>
+      <span className="group-hover:hidden w-[120px]">marieflor.dev</span>
 
-      <div className="hidden group-hover:block w-[120px]">
-        <span className="text-white">go to home</span>
-      </div>
+      <span className="hidden group-hover:block w-[120px] text-white">
+        go to home
+      </span>
+
       {!isHome && <AiOutlineHome className="mt-1" />}
     </Link>
   );
