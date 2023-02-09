@@ -20,7 +20,7 @@ export default function Badge({
     <div
       onClick={onClick}
       className={classNames(
-        "rounded-3xl inline-flex bg-tuscan text-blue py-0.5 px-3 text-sm items-center justify-center tracking-wider",
+        "rounded-3xl inline-flex bg-tuscan dark:bg-tuscan/50 text-blue py-0.5 px-3 text-sm items-center justify-center tracking-wider",
         {
           "space-x-2": icon,
           "text-xs": size === "sm",

@@ -12,7 +12,7 @@ export default function Heading({ dark, children, size, className }: Props) {
   return (
     <h2
       className={classNames(
-        "font-extrabold whitespace-pre-line",
+        "whitespace-pre-line dark:text-blue",
         {
           "text-tuscan": dark,
           "text-pink": !dark,

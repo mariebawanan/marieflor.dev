@@ -260,7 +260,7 @@ const projects: ShapeConfig[] = [
   {
     icon: <FullFilled color={Colors.Pink} />,
     top: 50,
-    right: 40,
+    right: 35,
     width: 14,
     lag: 6,
     rotate: -32,
@@ -269,7 +269,7 @@ const projects: ShapeConfig[] = [
     icon: <FullOutline color={Colors.Pink} />,
     width: 14,
     top: 50,
-    right: 36,
+    right: 31,
     lag: 1,
     rotate: -32,
   },
