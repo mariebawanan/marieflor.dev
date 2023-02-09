@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <LogRocket />
-      <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" defaultTheme="light">
         <Component {...pageProps} />
       </ThemeProvider>
     </>

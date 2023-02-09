@@ -16,6 +16,7 @@ module.exports = {
         blue: "#def3ff",
         red: "#DE5055",
         orange: "#DF7410",
+        teal: "#2F4858",
       },
       fontFamily: {
         sans: [
