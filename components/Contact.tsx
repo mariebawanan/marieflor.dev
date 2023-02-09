@@ -45,6 +45,11 @@ export default function Contact() {
             Linkedin
           </Badge>
         </div>
+
+        <p className="whitespace-pre-line text-sm font-bold">
+          {`\n\n\nThis site is still in the works, check back often. `}
+          &#9786;
+        </p>
       </div>
       <Float config={contact} />
     </SectionLayout>

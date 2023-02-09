@@ -34,10 +34,6 @@ export default function About() {
             among others, in building and maintaining web applications and
             design systems —
             <span className="font-bold">all built from the ground up</span>.
-            <p className="whitespace-pre-line text-sm font-bold">
-              {`\n\nThis site is still in the works, check back often. `}
-              &#9786;
-            </p>
           </div>
         </div>
       </div>

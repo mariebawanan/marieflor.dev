@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { AiOutlineHome } from "react-icons/ai";
 import { RiChat1Line, RiCodeLine, RiUserHeartLine } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
 import ModeToggle from "./ModeToggle";
@@ -34,6 +35,16 @@ export default function Header() {
 
       <nav className="absolute bottom-4 w-[90%] md:w-auto left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0 md:relative bg-pink dark:bg-orange/50 dark:md:bg-transparent md:bg-transparent rounded-3xl px-8 py-2">
         <ul className="flex space-x-6 md:space-x-14 justify-around md:justify-end items-center">
+          {isMobile && (
+            <NavItem
+              url="/"
+              isActive={currentPath === "/"}
+              icon={<AiOutlineHome />}
+              extra="home"
+            >
+              home
+            </NavItem>
+          )}
           <NavItem
             url="/about"
             isActive={currentPath === "/about"}
