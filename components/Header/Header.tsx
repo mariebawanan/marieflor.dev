@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { RiChat1Line, RiPencilLine, RiUserHeartLine } from "react-icons/ri";
-import ExtraOnHover from "./ExtraOnHover";
 import NavItem from "./NavItem";
 import SiteTitle from "./SiteTitle";
 
@@ -9,31 +8,32 @@ export default function Header() {
   const currentPath = router.pathname;
 
   return (
-    <div className="flex w-full mt-20 items-center justify-between">
+    <div className="flex w-full mt-10 md:mt-20 items-center justify-between">
       <SiteTitle isHome={currentPath === "/"} />
 
-      <nav>
-        <ul className="flex space-x-14">
+      <nav className="absolute bottom-4 w-[90%] left-1/2 -translate-x-1/2 md:relative bg-pink rounded-3xl px-8 py-2">
+        <ul className="flex space-x-6 md:space-x-14 justify-around">
           <NavItem
             url="/about"
             isActive={currentPath === "/about"}
-            onHover={
-              <ExtraOnHover icon={<RiUserHeartLine />} text="more of me" />
-            }
+            icon={<RiUserHeartLine />}
+            extra="more of me"
           >
             about
           </NavItem>
           <NavItem
             url="/writing"
             isActive={currentPath === "/writing"}
-            onHover={<ExtraOnHover icon={<RiPencilLine />} text="thoughts" />}
+            icon={<RiPencilLine />}
+            extra="thoughts"
           >
             writing
           </NavItem>
           <NavItem
             url="/contact"
             isActive={currentPath === "/contact"}
-            onHover={<ExtraOnHover icon={<RiChat1Line />} text="say hi :)" />}
+            icon={<RiChat1Line />}
+            extra="say hi :)"
           >
             contact
           </NavItem>

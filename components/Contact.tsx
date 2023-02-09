@@ -5,6 +5,7 @@ import { contact } from "./Float/config";
 import Float from "./Float/Float";
 import { openInNewTab } from "./helper";
 import { SectionLayout } from "./Layout";
+import { SplitText } from "./SplitText";
 import { Heading, SubHeading } from "./Typography";
 import { Align } from "./Typography/types";
 
@@ -18,7 +19,7 @@ export default function Contact() {
 
         <div>
           <Heading size="sm" dark className="font-extrabold">
-            Let’s keep in touch.
+            <SplitText text="Let’s keep in touch." />
           </Heading>
 
           <p>

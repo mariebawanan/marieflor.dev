@@ -1,15 +1,25 @@
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
+import { useMediaQuery } from "react-responsive";
+import ExtraOnHover from "./ExtraOnHover";
 
 interface Props {
   isActive: boolean;
-  onHover?: React.ReactNode;
+  icon?: React.ReactNode;
   children: React.ReactNode;
+  extra: string;
   url: string;
 }
 
-export default function NavItem({ isActive, onHover, children, url }: Props) {
+export default function NavItem({
+  isActive,
+  icon,
+  extra,
+  children,
+  url,
+}: Props) {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <Link
       href={url}
@@ -21,12 +31,15 @@ export default function NavItem({ isActive, onHover, children, url }: Props) {
       )}
     >
       {isActive && (
-        <div className="absolute -left-6 top-1.5 w-4 h-4">
+        <div className="absolute left-3 -bottom-3 md:-left-6 md:top-1.5 w-4 h-4 rotate-180">
           <Image src="/icons/half.svg" fill alt="active" />
         </div>
       )}
-      {children}
-      {onHover}
+      <div className="flex flex-col items-center justify-center">
+        {isMobile && icon}
+        {children}
+      </div>
+      {!isMobile && <ExtraOnHover icon={icon} text={extra} />}
     </Link>
   );
 }
