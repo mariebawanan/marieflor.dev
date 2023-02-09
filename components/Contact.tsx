@@ -12,7 +12,7 @@ import { Align } from "./Typography/types";
 export default function Contact() {
   return (
     <SectionLayout className="items-start w-full">
-      <div className="w-full md:max-w-2/3 flex flex-col space-y-11 items-start">
+      <div className="w-full md:max-w-2/3 flex flex-col space-y-8 items-start">
         <SubHeading dark align={Align.Left}>
           Contact
         </SubHeading>
@@ -47,7 +47,7 @@ export default function Contact() {
         </div>
 
         <p className="whitespace-pre-line text-sm font-bold">
-          {`\n\n\nThis site is still in the works, check back often. `}
+          {`This site is still in the works, check back often. `}
           &#9786;
         </p>
       </div>

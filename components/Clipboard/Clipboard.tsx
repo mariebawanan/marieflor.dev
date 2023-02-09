@@ -22,12 +22,12 @@ export default function Clipboard({ text, children }: Props) {
     >
       {children}
       {!copied && (
-        <span className="opacity-0 group-hover:opacity-100 transition">
+        <span className="opacity-0 group-hover:opacity-100 transition text-xs">
           click to copy!
         </span>
       )}
       <span
-        className={classNames("transition-all", {
+        className={classNames("transition-all text-xs", {
           block: copied,
           hidden: !copied,
         })}
