@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       textColor: {
@@ -10,6 +13,8 @@ module.exports = {
         tuscan: "#794856",
         pink: "#D5A7B4",
         blue: "#def3ff",
+        red: "#DE5055",
+        orange: "#DF7410",
       },
       fontFamily: {
         sans: [

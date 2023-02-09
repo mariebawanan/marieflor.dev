@@ -7,7 +7,7 @@ import TechList from "./TechList";
 
 export default function About() {
   return (
-    <SectionLayout className="overflow-hidden items-start w-full">
+    <SectionLayout className="items-start w-full">
       <div className="w-full md:max-w-2/3 flex flex-col items-center space-y-11">
         <SubHeading dark align={Align.Left}>
           About
