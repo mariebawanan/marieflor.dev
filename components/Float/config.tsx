@@ -7,20 +7,9 @@ import {
   HalfOutline,
   QuarterFilled,
 } from "./Shapes";
-import { Colors } from "./types";
+import { Colors, ShapeConfig } from "./types";
 
-export interface ShapeConfig {
-  icon: React.ReactNode;
-  bottom?: number;
-  top?: number;
-  left?: number;
-  right?: number;
-  width: number;
-  lag: number;
-  rotate?: number;
-}
-
-// Randomize shapes around the screen and make them responsive
+// Randomize shapes around the screen
 const home: ShapeConfig[] = [
   {
     icon: <HalfFilledV1 color={Colors.Purple} />,
@@ -93,6 +82,14 @@ const home: ShapeConfig[] = [
     bottom: 18,
     right: 24,
     width: 8,
+    lag: 4,
+    rotate: 40,
+  },
+  {
+    icon: <HalfOutline color={Colors.Pink} />,
+    bottom: 18,
+    left: 10,
+    width: 10,
     lag: 4,
     rotate: 40,
   },

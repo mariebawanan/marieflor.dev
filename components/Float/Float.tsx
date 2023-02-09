@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { CSSProperties, useEffect, useRef } from "react";
-import { ShapeConfig } from "./config";
+import { ShapeConfig } from "./types";
 import useShapes from "./useShapes";
 
 interface Props {
@@ -54,7 +54,7 @@ export default function Float({ config }: Props) {
       {items.map((item, i) => (
         <div
           key={`${item}-${i}`}
-          className="absolute shape "
+          className="absolute shape"
           style={{ ...(item as CSSProperties) }}
           data-lag={item.lag}
         >

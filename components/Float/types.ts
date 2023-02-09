@@ -1,3 +1,14 @@
+export interface ShapeConfig {
+  icon: React.ReactNode;
+  bottom?: number;
+  top?: number;
+  left?: number;
+  right?: number;
+  width: number;
+  lag: number;
+  rotate?: number;
+}
+
 export enum Page {
   Home = "home",
 }
