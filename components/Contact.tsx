@@ -1,16 +1,17 @@
 import { Clipboard } from "./Clipboard";
 import { SectionLayout } from "./Layout";
+import SplitText from "./SplitText/SplitText";
 import { Heading, SubHeading } from "./Typography";
 
 export default function Contact() {
   return (
     <SectionLayout className="flex flex-col space-y-20">
       <Heading dark className="font-bold text-center">
-        Let’s keep in touch!
+        <SplitText text="Let’s keep in touch!" />
       </Heading>
       <p className="w-full md:w-1/2 text-center">
-        If you have an exciting opportunity for me, or if you just simply want to say
-        hello, feel free to reach out!
+        If you have an exciting opportunity for me, or if you just simply want
+        to say hello, feel free to reach out!
       </p>
 
       <div className="flex flex-col space-y-4">

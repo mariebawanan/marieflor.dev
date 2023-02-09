@@ -8,7 +8,12 @@ interface Props {
   className?: string;
 }
 
-export default function SubHeading({ dark = false, children, align, className }: Props) {
+export default function SubHeading({
+  dark = false,
+  children,
+  align,
+  className,
+}: Props) {
   return (
     <h2
       className={classNames(

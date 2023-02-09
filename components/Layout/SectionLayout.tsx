@@ -13,6 +13,7 @@ export default function SectionLayout({ children, className, dark }: Props) {
         "bg-tuscan": dark,
       })}
     >
+      <div className="bg-blue absolute w-screen h-screen overflow-hidden top-0 left-0 -z-30" />
       <div
         className={classNames(
           "max-w-[90%] md:max-w-7xl flex justify-center items-center",
