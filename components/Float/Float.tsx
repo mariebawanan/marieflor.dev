@@ -15,9 +15,9 @@ export default function Float({ config }: Props) {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         ".shape",
-        { opacity: 0, scale: 0 },
+        { display: "none", scale: 0 },
         {
-          opacity: 1,
+          display: "block",
           scale: 1,
           stagger: 0.1,
           duration: 0.5,
@@ -72,7 +72,7 @@ export default function Float({ config }: Props) {
       {items.map((item, i) => (
         <div
           key={`${item}-${i}`}
-          className="absolute shape opacity-0"
+          className="absolute shape hidden"
           style={{ ...(item as CSSProperties) }}
           data-lag={item.lag}
         >
