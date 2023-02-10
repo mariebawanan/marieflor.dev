@@ -20,6 +20,11 @@ export default function Writing() {
 
           <p>Check back soon.</p>
         </div>
+
+        <p className="whitespace-pre-line text-xs font-bold">
+          Meanwhile, this site is being built & designed with NextJS,
+          TypeScript, Tailwind CSS, GSAP & Figma
+        </p>
       </div>
       <Float config={projects} />
     </SectionLayout>

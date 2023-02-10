@@ -24,7 +24,7 @@ export default function Badge({
         {
           "space-x-2": icon,
           "text-xs": size === "sm",
-          "hover:cursor-pointer hover:border-tuscan border hover:bg-blue transition hover:text-tuscan":
+          "hover:cursor-pointer hover:border-tuscan border dark:border-none hover:bg-blue transition hover:text-tuscan":
             onClick,
         },
         className

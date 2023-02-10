@@ -6,6 +6,18 @@ import { tech } from "./config";
 export default function TechList() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
+  if (isMobile) {
+    return (
+      <>
+        {tech.map((t, i) => (
+          <span key={`${t.name}-${i}`}>{`${t.name}${
+            i === tech.length - 2 ? " and " : ", "
+          }`}</span>
+        ))}
+      </>
+    );
+  }
+
   return (
     <>
       {tech.map((t, i) => (

@@ -12,7 +12,7 @@ import { Align } from "./Typography/types";
 export default function Contact() {
   return (
     <SectionLayout className="items-start w-full">
-      <div className="w-full md:max-w-2/3 flex flex-col space-y-8 items-start">
+      <div className="w-full md:max-w-2/3 flex flex-col space-y-8 items-start mb-20 md:pb-0">
         <SubHeading dark align={Align.Left}>
           Contact
         </SubHeading>

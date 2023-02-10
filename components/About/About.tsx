@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { about } from "../Float/config";
 import Float from "../Float/Float";
@@ -8,10 +9,19 @@ import TechList from "./TechList";
 
 export default function About() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const [mounted, setMounted] = useState(false);
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <SectionLayout className="items-start w-full">
-      <div className="w-full md:max-w-2/3 flex flex-col items-center space-y-4 md:space-y-11 text-sm  md:text-lg">
+      <div className="w-full md:max-w-2/3 flex flex-col items-center space-y-4 md:space-y-11 text-sm md:text-lg mb-20 md:pb-0">
         <SubHeading dark align={Align.Left}>
           About
         </SubHeading>
@@ -30,9 +40,8 @@ export default function About() {
           <div className="w-full md:w-1/2">
             Currently, I am a Senior Software Engineer,{" "}
             <span className="font-bold">focusing on the frontend</span>. On a
-            daily basis, I work with <TechList />
-            among others, in building and maintaining web applications and
-            design systems —
+            daily basis, I work with <TechList /> among others, in building and
+            maintaining web applications and design systems —
             <span className="font-bold">all built from the ground up</span>.
           </div>
         </div>

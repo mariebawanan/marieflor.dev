@@ -16,9 +16,9 @@ export default function Heading({ dark, children, size, className }: Props) {
         {
           "text-tuscan": dark,
           "text-pink": !dark,
-          "text-7xl md:text-8xl": !size,
+          "text-5xl sm:text-7xl md:text-8xl": !size,
           "text-2xl md:text-6xl": size === "sm",
-          "text-xl md:text-4xl": size === "xs",
+          "text-sm sm:text-xl md:text-4xl": size === "xs",
         },
         className
       )}

@@ -6,7 +6,7 @@ import { Heading, SubHeading } from "./Typography";
 
 export default function Home() {
   return (
-    <SectionLayout className="overflow-hidden ">
+    <SectionLayout className="overflow-hidden">
       <div className="w-full md:max-w-2/3 flex flex-col items-center space-y-11">
         <SubHeading dark>
           <span className="font-bold">Hello! </span>My name is
@@ -17,7 +17,7 @@ export default function Home() {
           <SplitText text="Bawanan" />
         </Heading>
 
-        <p className="text-center whitespace-pre-line">
+        <p className="text-center md:whitespace-pre-line">
           {`I am a frontend developer who loves to work on
                 the web. I am passionate about building simple
                 and elegant solutions to complex problems.`}

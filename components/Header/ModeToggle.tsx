@@ -30,7 +30,7 @@ export default function ModeToggle({ setTheme, theme }: Props) {
         className={classNames(
           "w-5 h-5 relative rounded-full transition duration-500 transform flex items-center justify-center text-white shadow",
           {
-            "bg-orange translate-x-0 ml-1": !isDark,
+            "bg-orange translate-x-0 ml-0.5": !isDark,
             "bg-teal translate-x-full -mr-1": isDark,
           }
         )}
