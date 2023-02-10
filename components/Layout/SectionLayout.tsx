@@ -40,7 +40,7 @@ export default function SectionLayout({ children, className }: Props) {
         )}
       >
         <Header />
-        <div ref={ref} className="flex-1 items-center hidden">
+        <div ref={ref} className="flex-1 w-full items-center hidden">
           {children}
         </div>
       </div>
