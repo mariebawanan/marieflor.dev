@@ -11,6 +11,24 @@ export default function Float({ config }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const items = useShapes({ config });
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".shape",
+        { opacity: 0, scale: 0 },
+        {
+          opacity: 1,
+          scale: 1,
+          stagger: 0.1,
+          duration: 0.5,
+          ease: "power2.out",
+        }
+      );
+    }, ref);
+
+    return () => ctx.revert();
+  }, []);
+
   const handleMouseMove = (e: MouseEvent) => {
     const container = ref.current;
 
@@ -54,7 +72,7 @@ export default function Float({ config }: Props) {
       {items.map((item, i) => (
         <div
           key={`${item}-${i}`}
-          className="absolute shape"
+          className="absolute shape opacity-0"
           style={{ ...(item as CSSProperties) }}
           data-lag={item.lag}
         >
