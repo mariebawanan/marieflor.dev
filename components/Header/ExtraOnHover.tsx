@@ -5,7 +5,7 @@ interface Props {
 
 export default function ExtraOnHover({ icon, text }: Props) {
   return (
-    <div className="space-x-2 text-xs w-[150px] absolute hidden group-hover:flex items-center transition duration-300 ease-in-out bottom-full -left-2">
+    <div className="absolute bottom-full -left-2 hidden w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out group-hover:flex">
       {icon}
       <span>{text}</span>
     </div>

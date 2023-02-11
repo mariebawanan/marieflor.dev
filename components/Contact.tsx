@@ -11,8 +11,8 @@ import { Align } from "./Typography/types";
 
 export default function Contact() {
   return (
-    <SectionLayout className="items-start w-full">
-      <div className="w-full md:max-w-2/3 flex flex-col space-y-8 items-start mb-20 md:pb-0">
+    <SectionLayout className="w-full items-start">
+      <div className="md:max-w-2/3 mb-20 flex w-full flex-col items-start space-y-8 md:pb-0">
         <SubHeading dark align={Align.Left}>
           Contact
         </SubHeading>

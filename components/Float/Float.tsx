@@ -68,11 +68,11 @@ export default function Float({ config }: Props) {
   }, []);
 
   return (
-    <div ref={ref} className="overflow-hidden -z-10 dark:opacity-70">
+    <div ref={ref} className="-z-10 overflow-hidden dark:opacity-70">
       {items.map((item, i) => (
         <div
           key={`${item}-${i}`}
-          className="absolute shape hidden"
+          className="shape absolute hidden"
           style={{ ...(item as CSSProperties) }}
           data-lag={item.lag}
         >

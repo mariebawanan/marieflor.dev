@@ -12,7 +12,7 @@ export default function ModeToggle({ setTheme, theme }: Props) {
   return (
     <button
       className={classNames(
-        "w-11 h-6 rounded-full transition duration-300 focus:outline-none shadow relative border",
+        "relative h-6 w-11 rounded-full border shadow transition duration-300 focus:outline-none",
         {
           "bg-white": !isDark,
           "bg-black ": isDark,
@@ -22,16 +22,16 @@ export default function ModeToggle({ setTheme, theme }: Props) {
     >
       <FaCloud
         className={classNames("absolute top-0.5 opacity-30", {
-          "text-blue left-0 ": isDark,
-          "text-orange right-0 ": !isDark,
+          "left-0 text-blue ": isDark,
+          "right-0 text-orange ": !isDark,
         })}
       />
       <div
         className={classNames(
-          "w-5 h-5 relative rounded-full transition duration-500 transform flex items-center justify-center text-white shadow",
+          "relative flex h-5 w-5 transform items-center justify-center rounded-full text-white shadow transition duration-500",
           {
-            "bg-orange translate-x-0 ml-0.5": !isDark,
-            "bg-teal translate-x-full -mr-1": isDark,
+            "ml-0.5 translate-x-0 bg-orange": !isDark,
+            "-mr-1 translate-x-full bg-teal": isDark,
           }
         )}
       >

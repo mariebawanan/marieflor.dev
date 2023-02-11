@@ -5,7 +5,7 @@ interface Props {
 export default function PageLayout({ children }: Props) {
   return (
     <main
-      className="font-sans min-h-screen w-full text-base md:text-lg text dark:text-blue overflow-hidden bg-cover bg-no-repeat"
+      className="min-h-screen w-full overflow-hidden bg-cover bg-no-repeat font-serif text-base text dark:text-blue md:text-lg "
       style={{
         backgroundImage: " url('/icons/bg.svg')",
       }}

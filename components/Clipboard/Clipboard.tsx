@@ -17,17 +17,17 @@ export default function Clipboard({ text, children }: Props) {
 
   return (
     <div
-      className="md:hover:cursor-pointer group flex flex-col space-y-4 items-center"
+      className="group flex flex-col items-center space-y-4 md:hover:cursor-pointer"
       onClick={handleCopy}
     >
       {children}
       {!copied && (
-        <span className="opacity-0 group-hover:opacity-100 transition text-xs">
+        <span className="text-xs opacity-0 transition group-hover:opacity-100">
           click to copy!
         </span>
       )}
       <span
-        className={classNames("transition-all text-xs", {
+        className={classNames("text-xs transition-all", {
           block: copied,
           hidden: !copied,
         })}

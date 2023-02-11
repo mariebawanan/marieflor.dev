@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettify": "prettier --write \"./**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -31,6 +32,8 @@
     "@types/gsap": "^3.0.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.2",
     "tailwindcss": "^3.2.4"
   }
 }

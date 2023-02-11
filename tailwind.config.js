@@ -19,15 +19,15 @@ module.exports = {
         teal: "#2F4858",
       },
       fontFamily: {
-        sans: [
+        serif: [
           "Uxum",
-          "ui-sans-serif",
+          "ui-serif",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
-          '"Segoe UI"',
-          "Roboto",
-          '"Helvetica Neue"',
+          '"Times New Roman"',
+          "Georgia",
+          "Garamond",
         ],
       },
       fontSize: {

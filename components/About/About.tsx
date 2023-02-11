@@ -20,8 +20,8 @@ export default function About() {
   }
 
   return (
-    <SectionLayout className="items-start w-full">
-      <div className="w-full md:max-w-2/3 flex flex-col items-center space-y-4 md:space-y-11 text-sm md:text-lg mb-20 md:pb-0">
+    <SectionLayout className="w-full items-start">
+      <div className="md:max-w-2/3 mb-20 flex w-full flex-col items-center space-y-4 text-sm md:space-y-11 md:pb-0 md:text-lg">
         <SubHeading dark align={Align.Left}>
           About
         </SubHeading>
@@ -31,8 +31,8 @@ export default function About() {
           experience and pixel-perfect user interfaces
         </Heading>
 
-        <div className="flex flex-col md:space-x-12 leading-relaxed md:flex-row space-y-4 md:space-y-0">
-          <p className="w-full md:w-1/2 whitespace-pre-line">
+        <div className="flex flex-col space-y-4 leading-relaxed md:flex-row md:space-x-12 md:space-y-0">
+          <p className="w-full whitespace-pre-line md:w-1/2">
             {`I am a frontend-focused software engineer with  6+ years of professional development experience, holding a degree of BS Computer Science from the University of the Philippines.
             \nI have been employed by leading tech companies and emerging amazing startup companies throughout my career thus far.`}
           </p>

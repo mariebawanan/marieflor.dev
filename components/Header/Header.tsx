@@ -25,7 +25,7 @@ export default function Header() {
   }
 
   return (
-    <div className="flex w-full mt-10 md:mt-20 items-center justify-between">
+    <div className="mt-10 flex w-full items-center justify-between md:mt-20">
       <SiteTitle isHome={currentPath === "/"} />
       {isMobile && (
         <div className="absolute top-10 right-5">
@@ -33,8 +33,8 @@ export default function Header() {
         </div>
       )}
 
-      <nav className="absolute z-20 bottom-4 md:bottom-0 w-[90%] md:w-auto left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0 md:relative bg-pink dark:bg-orange/50 dark:md:bg-transparent md:bg-transparent rounded-3xl px-8 py-2">
-        <ul className="flex space-x-6 md:space-x-14 justify-around md:justify-end items-center">
+      <nav className="absolute bottom-4 left-1/2 z-20 w-[90%] -translate-x-1/2 rounded-3xl bg-pink px-8 py-2 dark:bg-orange/50 md:relative md:bottom-0 md:left-0 md:w-auto md:translate-x-0 md:bg-transparent dark:md:bg-transparent">
+        <ul className="flex items-center justify-around space-x-6 md:justify-end md:space-x-14">
           {isMobile && (
             <NavItem
               url="/"

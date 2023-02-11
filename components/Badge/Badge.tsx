@@ -20,11 +20,11 @@ export default function Badge({
     <div
       onClick={onClick}
       className={classNames(
-        "rounded-3xl inline-flex bg-tuscan dark:bg-tuscan/50 text-blue py-0.5 px-3 text-sm items-center justify-center tracking-wider",
+        "inline-flex items-center justify-center rounded-3xl bg-tuscan py-0.5 px-3 text-sm tracking-wider text-blue dark:bg-tuscan/50",
         {
           "space-x-2": icon,
           "text-xs": size === "sm",
-          "hover:cursor-pointer hover:border-tuscan border dark:border-none hover:bg-blue transition hover:text-tuscan":
+          "border transition hover:cursor-pointer hover:border-tuscan hover:bg-blue hover:text-tuscan dark:border-none":
             onClick,
         },
         className
