@@ -16,9 +16,8 @@ export default function Menu({ currentPath }: Props) {
             icon={item.icon}
             extra={item.extra}
             isMobileOnly={item.mobileOnly}
-          >
-            {item.label}
-          </NavItem>
+            label={item.label}
+          />
         </li>
       ))}
     </ul>

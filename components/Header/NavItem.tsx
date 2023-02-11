@@ -6,22 +6,23 @@ import ExtraOnHover from "./ExtraOnHover";
 interface Props {
   isActive: boolean;
   icon?: React.ReactNode;
-  children: React.ReactNode;
   extra: string;
   url: string;
   isMobileOnly?: boolean;
+  label: string;
 }
 
 export default function NavItem({
   isActive,
   icon,
   extra,
-  children,
   url,
   isMobileOnly,
+  label,
 }: Props) {
   return (
     <Link
+      aria-label={`Go to ${label} page`}
       href={url}
       className={classNames(
         "group relative flex flex-col items-center justify-center text-base before:absolute before:bottom-1 before:left-0 before:block before:h-3 before:w-full before:origin-bottom before:scale-y-0 before:bg-pink/40 before:transition before:duration-200 before:ease-in-out before:content-[''] hover:text-red before:hover:scale-y-100 dark:before:hover:bg-orange/50 md:text-lg",
@@ -42,7 +43,7 @@ export default function NavItem({
       )}
 
       <div className="mb-1 block md:mb-0 md:hidden">{icon}</div>
-      <div className="hidden xs:block">{children}</div>
+      <div className="hidden xs:block">{label}</div>
       <ExtraOnHover icon={icon} text={extra} />
     </Link>
   );
