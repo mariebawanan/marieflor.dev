@@ -12,7 +12,7 @@ export default function ModeToggle({ setTheme, theme }: Props) {
   return (
     <button
       className={classNames(
-        "relative h-6 w-11 rounded-full border shadow transition duration-300 focus:outline-none",
+        "absolute top-10 right-5 inline-flex h-6 w-11 rounded-full border shadow transition duration-300 focus:outline-none md:relative md:top-0 md:right-0",
         {
           "bg-white": !isDark,
           "bg-black ": isDark,

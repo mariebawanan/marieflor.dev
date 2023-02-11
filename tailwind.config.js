@@ -40,7 +40,7 @@ module.exports = {
         "1/2": "50%",
       },
       screens: {
-        xs: "340px",
+        xs: "375px",
       },
     },
   },
