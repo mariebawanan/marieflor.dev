@@ -11,6 +11,7 @@ export default function ModeToggle({ setTheme, theme }: Props) {
 
   return (
     <button
+      aria-label={`Toggle to ${isDark ? "light" : "dark"} mode`}
       className={classNames(
         "absolute top-10 right-5 inline-flex h-6 w-11 rounded-full border shadow transition duration-300 focus:outline-none md:relative md:top-0 md:right-0",
         {
