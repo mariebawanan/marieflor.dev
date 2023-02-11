@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <LogRocket />
       <Analytics />
-      <ThemeProvider attribute="class" defaultTheme="light">
+      <ThemeProvider attribute="class" defaultTheme="dark">
         <Component {...pageProps} />
       </ThemeProvider>
     </>

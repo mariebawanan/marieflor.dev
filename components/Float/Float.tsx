@@ -68,7 +68,7 @@ export default function Float({ config }: Props) {
   }, []);
 
   return (
-    <div ref={ref} className="-z-10 overflow-hidden dark:opacity-70">
+    <div ref={ref} className="-z-10 overflow-hidden opacity-80 dark:opacity-50">
       {items.map((item, i) => (
         <div
           key={`${item}-${i}`}
