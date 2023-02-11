@@ -37,7 +37,6 @@ export default function Contact() {
         <div>
           Alternatively, you can also send me a message on
           <Badge
-            size="sm"
             icon={<SiLinkedin />}
             onClick={() => openInNewTab("https://linkedin.com/in/maribwnn")}
             className="ml-1"

@@ -39,6 +39,9 @@ module.exports = {
       maxWidth: {
         "1/2": "50%",
       },
+      screens: {
+        xs: "340px",
+      },
     },
   },
   plugins: [],

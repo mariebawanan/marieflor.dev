@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
-import { useMediaQuery } from "react-responsive";
 import ExtraOnHover from "./ExtraOnHover";
 
 interface Props {
@@ -19,8 +18,6 @@ export default function NavItem({
   children,
   url,
 }: Props) {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
   return (
     <Link
       href={url}
@@ -41,9 +38,9 @@ export default function NavItem({
         />
       )}
 
-      {isMobile && icon}
+      <div className="block md:hidden">{icon}</div>
       {children}
-      {!isMobile && <ExtraOnHover icon={icon} text={extra} />}
+      <ExtraOnHover icon={icon} text={extra} />
     </Link>
   );
 }

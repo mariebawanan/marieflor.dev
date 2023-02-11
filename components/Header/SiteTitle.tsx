@@ -1,10 +1,8 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
-import { useMediaQuery } from "react-responsive";
 
 export default function SiteTitle({ isHome }: { isHome: boolean }) {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <Link
       href="/"
@@ -17,13 +15,10 @@ export default function SiteTitle({ isHome }: { isHome: boolean }) {
         marieflor.dev
       </span>
 
-      {!isMobile && (
-        <span className="hidden w-[120px] text-white group-hover:block">
-          go to home
-        </span>
-      )}
-
-      {!isHome && <AiOutlineHome className="mt-0.5 md:mt-1" />}
+      <div className="hidden w-[140px] space-x-4 text-white md:group-hover:flex">
+        <span> go to home </span>
+        <AiOutlineHome className="mt-0.5 md:mt-1" />
+      </div>
     </Link>
   );
 }

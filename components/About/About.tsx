@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
-import { useMediaQuery } from "react-responsive";
 import { about } from "../Float/config";
 import Float from "../Float/Float";
 import { SectionLayout } from "../Layout";
 import { Heading, SubHeading } from "../Typography";
 import { Align } from "../Typography/types";
+import MobileTechList from "./MobileTechList";
 import TechList from "./TechList";
 
 export default function About() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
   const [mounted, setMounted] = useState(false);
-  // useEffect only runs on the client, so now we can safely show the UI
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -26,7 +25,7 @@ export default function About() {
           About
         </SubHeading>
 
-        <Heading size={isMobile ? "xs" : "sm"} dark className="font-extrabold">
+        <Heading size="sm" dark className="font-extrabold">
           a frontend developer with affinity for design, intuitive user
           experience and pixel-perfect user interfaces
         </Heading>
@@ -40,8 +39,9 @@ export default function About() {
           <div className="w-full md:w-1/2">
             Currently, I am a Senior Software Engineer,{" "}
             <span className="font-bold">focusing on the frontend</span>. On a
-            daily basis, I work with <TechList /> among others, in building and
-            maintaining web applications and design systems —
+            daily basis, I work with <MobileTechList />
+            <TechList /> among others, in building and maintaining web
+            applications and design systems —
             <span className="font-bold">all built from the ground up</span>.
           </div>
         </div>
